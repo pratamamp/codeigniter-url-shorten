@@ -24,14 +24,15 @@ import end point collection and environment using postman application
 ### Feature
 
 * Access from either browser and mobile
-
+	
+![ScreenShot](img/home.jpg)
 	using basic auth access
 	```
 	/api/shorten 
 	```
 	with url parameter body, you can shorten your url
 
-	![ScreenShot](api-shorturl.jpg)
+	![ScreenShot](img/post-image.jpg)
 
 
 	Sure with the reversing method you can extract your alias url become redirect link
@@ -64,6 +65,7 @@ import end point collection and environment using postman application
 		/api/stats
 		```
 
+![ScreenShot](img/stats.jpg)
 	* Stats by most country from
 
 		via browser
