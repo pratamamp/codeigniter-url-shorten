@@ -31,6 +31,7 @@ import end point collection and environment using postman application
 	```
 	with url parameter body, you can shorten your url
 
+	![ScreenShot]('api-shorturl.jpg')
 
 
 	Sure with the reversing method you can extract your alias url become redirect link
