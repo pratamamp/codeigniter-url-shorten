@@ -34,10 +34,13 @@ import end point collection and environment using postman application
 
 
 	Sure with the reversing method you can extract your alias url become redirect link
+	
 	```
 	/api/shorten/(alias)
+	```
 
 	Example : 
+	```
 	/api/shorten/B8ufy
 	/api/shorten/1UfrT
 	```
@@ -74,6 +77,7 @@ import end point collection and environment using postman application
 		```
 		/api/stats/country
 		```
+
 
 
 
