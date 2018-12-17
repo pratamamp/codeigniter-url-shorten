@@ -11,5 +11,14 @@ class Redirect extends CI_Controller {
 
 	function index() {
 		$this->short->log_redirect();
+		if(isMobile()) {
+			$alias = $this->uri->segment(2);
+		}else {
+			$alias = $this->uri->segment(1);
+		}
+		// redirect alias
+		$this->short->find_links($alias);
 	}
+
+
 }

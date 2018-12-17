@@ -51,8 +51,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'shorten';
 $route['(:any)'] = 'redirect/index/$1';
+$route['api/stats/country'] = 'api/stats_by_country';
+$route['api/stats/links'] = 'api/stats_by_links';
+$route['api/shorten'] = 'api/shorten';
+$route['api/(:any)'] = 'api/realpath/id/$1';
 $route['shorten/create'] = 'shorten/create';
-$route['stats/view'] = 'stats/view';
-
+$route['stats/view/country'] = 'stats/index/true';
+$route['stats/view'] = 'stats/index';
 $route['404_override'] = '404';
 $route['translate_uri_dashes'] = FALSE;

@@ -15,7 +15,7 @@ class Shorten extends CI_Controller {
 	function create() {
 		$url = $this->input->post('url');
 		// length of alias url
-		$link_length = 5;
+		$link_length = $this->config->item('link_length');
 		$existing_alias = $this->short->alias_from_url($url);
 		$short_url = "";
 
@@ -28,16 +28,21 @@ class Shorten extends CI_Controller {
 				$alias = random_string('alnum', $link_length);
 			}
 
-			$this->short->save_new_alias($url, $alias);
+
+			$this->short->save_new_alias(addhttp($url), $alias);
 			$short_url = $alias;
 		}else {
 			$short_url = $existing_alias;
 		}
 
-		echo base_url() . $short_url;
+		echo json_encode(array('result'=>base_url() . $short_url));
 		
 	}
 
-
-	
+	// function addhttp($url) {
+	//     if (!preg_match("@^[hf]tt?ps?://@", $url)) {
+	//         $url = "http://" . $url;
+	//     }
+	//     return $url;
+	// }
 }

@@ -1,4 +1,4 @@
-# BASIC 
+# Shorten URL with Stats 
 
 
 
@@ -17,16 +17,37 @@ MySQL
 ### Installing
 
 ```
-install to local repository and create database name db_portal and import all query inside
+install to local repository and create database name 'dbshortener', and import all query inside
 import end point collection and environment using postman application
 ```
 
-## Deployment
-## Built With
+### Feature
 
-* [Codeigniter 3.1.9](https://www.codeigniter.com/)
+* Access from either browser and mobile
+
+	using basic auth access
+	```
+	/api/shorten 
+	```
+	with url parameter body, you can shorten your url
 
 
+	the reversing method you can extract your alias url become redirect link
+	```
+	/api/shorten/(alias)
+
+	ex: /api/shorten/B8ufy
+		/api/shorten/1UfrT
+	```
+
+	
+* view statistic 'URL Rank' and 'COUNTRY from rank'
+
+
+### Built With
+
+* [Codeigniter 3.1.9](https://www.codeigniter.com/) with
+* [REST SERVER] (https://packagist.org/packages/chriskacerguis/codeigniter-restserver)
 
 
 ## Authors

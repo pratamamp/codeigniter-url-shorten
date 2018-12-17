@@ -38,9 +38,9 @@ $config['base_url'] = $root;
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
-$config['link_length'] = 3;
+$config['link_length'] = 5;
 
 /*
 |--------------------------------------------------------------------------
