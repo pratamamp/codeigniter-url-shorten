@@ -25,7 +25,8 @@ import end point collection and environment using postman application
 
 * Access from either browser and mobile
 	
-![ScreenShot](img/home.jpg)
+	![ScreenShot](img/home.jpg)
+
 	using basic auth access
 	```
 	/api/shorten 
