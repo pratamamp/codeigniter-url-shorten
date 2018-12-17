@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "9f629b77-2cee-49bb-941b-2c30066e5e87",
+		"name": "ShortenURL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Short url",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dea4767d-1cad-4f47-9b6a-6a5bc350dd1e",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "ya.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{localhost}}shorten_url/api/shorten",
+					"host": [
+						"{{localhost}}shorten_url"
+					],
+					"path": [
+						"api",
+						"shorten"
+					]
+				},
+				"description": "create alias url"
+			},
+			"response": []
+		},
+		{
+			"name": "Get url",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{localhost}}shorten_url/api/",
+					"host": [
+						"{{localhost}}shorten_url"
+					],
+					"path": [
+						"api",
+						""
+					]
+				},
+				"description": "Redirect from alias url"
+			},
+			"response": []
+		},
+		{
+			"name": "Stats by Country",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{localhost}}shorten_url/api/stats/country",
+					"host": [
+						"{{localhost}}shorten_url"
+					],
+					"path": [
+						"api",
+						"stats",
+						"country"
+					]
+				},
+				"description": "statistic by most country"
+			},
+			"response": []
+		},
+		{
+			"name": "Stats by Links",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "username",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{localhost}}shorten_url/api/stats/links",
+					"host": [
+						"{{localhost}}shorten_url"
+					],
+					"path": [
+						"api",
+						"stats",
+						"links"
+					]
+				},
+				"description": "get by most link"
+			},
+			"response": []
+		}
+	]
+}
