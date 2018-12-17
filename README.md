@@ -32,22 +32,55 @@ import end point collection and environment using postman application
 	with url parameter body, you can shorten your url
 
 
-	the reversing method you can extract your alias url become redirect link
+
+	Sure with the reversing method you can extract your alias url become redirect link
 	```
 	/api/shorten/(alias)
 
-	ex: /api/shorten/B8ufy
-		/api/shorten/1UfrT
+	Example : 
+	/api/shorten/B8ufy
+	/api/shorten/1UfrT
 	```
 
-	
+
 * view statistic 'URL Rank' and 'COUNTRY from rank'
+	
+	* Stats by most links
+
+		via browser
+
+		``` 
+		/view/stats
+		```
+
+
+		via api
+
+		```
+		/api/stats
+		```
+
+	* Stats by most country from
+
+		via browser
+		
+		```
+		/view/stats/country
+		```
+
+
+		via api
+		
+		```
+		/api/stats/country
+		```
+
 
 
 ### Built With
 
 * [Codeigniter 3.1.9](https://www.codeigniter.com/) with
-* [REST SERVER] (https://packagist.org/packages/chriskacerguis/codeigniter-restserver)
+* [Codeigniter RestServer](https://packagist.org/packages/chriskacerguis/codeigniter-restserver)
 
 
 ## Authors
