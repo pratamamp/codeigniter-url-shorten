@@ -67,6 +67,8 @@ import end point collection and environment using postman application
 		```
 
 ![ScreenShot](img/stats.jpg)
+
+
 	* Stats by most country from
 
 		via browser
