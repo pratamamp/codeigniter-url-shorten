@@ -71,12 +71,14 @@ import end point collection and environment using postman application
 
 		via browser
 		
+		
 		```
 		/view/stats/country
 		```
 
 
 		via api
+		
 		
 		```
 		/api/stats/country
