@@ -66,7 +66,7 @@ import end point collection and environment using postman application
 		/api/stats
 		```
 
-![ScreenShot](img/stats.jpg)
+	![ScreenShot](img/stats.jpg)
 
 	* Stats by most country from
 
